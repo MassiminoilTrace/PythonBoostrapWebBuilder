@@ -11,6 +11,6 @@ import oggettoHTML
 class Container(oggettoHTML.OggettoHTML):
     def __init__(self, fluid=False, ID=""):
         if fluid:
-            super().__init__(classi=["container-fluid"])
+            super().__init__(classi=["container-fluid"],ID=ID)
         else:
-            super().__init__(classi=["container"])
+            super().__init__(classi=["container"],ID=ID)
